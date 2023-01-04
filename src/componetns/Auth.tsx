@@ -23,7 +23,6 @@ import CameraIcon from "@material-ui/icons/Camera";
 import EmailIcon from "@material-ui/icons/Email";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
-import { url } from "inspector";
 
 // passリセットモーダルを画面中央に表示
 function getModalStyle() {

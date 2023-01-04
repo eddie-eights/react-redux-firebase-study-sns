@@ -3,7 +3,7 @@ import styles from "./TweetInput.module.css";
 import { useSelector } from "react-redux";
 import { selectUser } from "../features/userSlice";
 import { auth, storage, db } from "../firebase";
-import { Avatar, Button, IconButton, styled } from "@material-ui/core";
+import { Avatar, Button, IconButton } from "@material-ui/core";
 import firebase from "firebase/app";
 import AddAPhotoIcon from "@material-ui/icons/AddAPhoto";
 
