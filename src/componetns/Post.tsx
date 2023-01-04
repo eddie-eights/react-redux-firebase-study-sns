@@ -57,7 +57,7 @@ const Post: React.FC<PROPS> = (props) => {
 			.collection("posts")
 			.doc(props.postId)
 			.collection("comments")
-			.orderBy("timestamp", "desc")
+			.orderBy("timestamp", "asc")
 			.onSnapshot((snapshot) => {
 				setComments(
 					snapshot.docs.map((doc) => ({
