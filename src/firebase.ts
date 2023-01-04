@@ -1,5 +1,4 @@
 // firebaseのConfigファイル
-
 import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
@@ -7,13 +6,12 @@ import "firebase/storage";
 
 // .envで設定した環境変数を割り当てる
 const firebaseConfig = {
-	apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
-	authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
-	// databaseURL: process.env.REACT_APP_FIREBASE_DATABASE,
-	projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-	storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-	messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID,
-	appId: process.env.REACT_APP_FIREBASE_APP_ID,
+	apiKey: "REACT_APP_FIREBASE_APIKEY",
+	authDomain: "REACT_APP_FIREBASE_DOMAIN",
+	projectId: "REACT_APP_FIREBASE_PROJECT_ID",
+	storageBucket: "REACT_APP_FIREBASE_STORAGE_BUCKET",
+	messagingSenderId: "REACT_APP_FIREBASE_SENDER_ID",
+	appId: "REACT_APP_FIREBASE_APP_ID",
 };
 // firebaseをinitialize
 const firebaseApp = firebase.initializeApp(firebaseConfig);
